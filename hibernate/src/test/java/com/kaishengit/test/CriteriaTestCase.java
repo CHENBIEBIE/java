@@ -1,4 +1,4 @@
-package com.kaishengit.test.com.kaishengit.test;
+package com.kaishengit.test;
 
 
 import com.kaishengit.pojo.User;
