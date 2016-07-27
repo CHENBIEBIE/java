@@ -1,16 +1,25 @@
 package com.kaishengit.pojo;
 
+
+
+import javax.persistence.*;
 import java.util.Set;
 
 /**
  * Created by Administrator on 2016/7/27.
  */
+@Entity
+@Table(name = "t_teacher")
 public class Teacher {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
     private String teaname;
 
+    @ManyToMany(mappedBy = "teacherSet")
+    @OrderBy("id desc")
     private Set<Student> studentSet;
 
     public Integer getId() {

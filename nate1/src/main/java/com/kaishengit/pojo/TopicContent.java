@@ -1,10 +1,16 @@
 package com.kaishengit.pojo;
 
+import javax.persistence.*;
+
 /**
  * Created by Administrator on 2016/7/27.
  */
+@Entity
+@Table(name = "t_topic_content")
 public class TopicContent {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String content;
 

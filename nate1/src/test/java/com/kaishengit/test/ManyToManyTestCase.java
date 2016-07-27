@@ -21,16 +21,16 @@ public class ManyToManyTestCase {
         session.beginTransaction();
 
         Student student = new Student();
-        student.setStuname("S3");
+        student.setStuname("S5");
 
         Student student1 = new Student();
-        student1.setStuname("S4");
+        student1.setStuname("S6");
 
         Teacher teacher = new Teacher();
-        teacher.setTeaname("T3");
+        teacher.setTeaname("T5");
 
         Teacher teacher2 = new Teacher();
-        teacher2.setTeaname("T4");
+        teacher2.setTeaname("T6");
 
         Set<Teacher> teacherSet = new HashSet<>();
         teacherSet.add(teacher);

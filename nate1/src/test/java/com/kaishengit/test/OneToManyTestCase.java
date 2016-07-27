@@ -47,7 +47,7 @@ public class OneToManyTestCase {
         Session session = HibernateUtil.getSession();
         session.beginTransaction();
 
-        Dept dept = (Dept) session.get(Dept.class, 19);
+        Dept dept = (Dept) session.get(Dept.class, 23);
 
         System.out.println(dept.getDeptname());
 
