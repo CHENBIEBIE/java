@@ -34,6 +34,8 @@
         <mapping resource="hbm/Person.hbm.xml"/>
         <mapping resource="hbm/Topic.hbm.xml"/>
         <mapping resource="hbm/TopicContent.hbm.xml"/>
+        <mapping resource="hbm/Student.hbm.xml"/>
+        <mapping resource="hbm/Teacher.hbm.xml"/>
 
 
 

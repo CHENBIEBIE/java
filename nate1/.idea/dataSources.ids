@@ -105,75 +105,70 @@
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
       </column>
-      <key id="35" parent="7" name="PRIMARY">
-        <columns>stuid
-teaid</columns>
-        <primary>1</primary>
-      </key>
-      <column id="36" parent="8" name="id">
+      <column id="35" parent="8" name="id">
         <mandatory>1</mandatory>
         <data-type>varchar(40)</data-type>
       </column>
-      <column id="37" parent="8" name="title">
+      <column id="36" parent="8" name="title">
         <data-type>varchar(100)</data-type>
       </column>
-      <column id="38" parent="8" name="version">
+      <column id="37" parent="8" name="version">
         <data-type>int(11)</data-type>
       </column>
-      <key id="39" parent="8" name="PRIMARY">
+      <key id="38" parent="8" name="PRIMARY">
         <columns>id</columns>
         <primary>1</primary>
       </key>
-      <column id="40" parent="9" name="id">
+      <column id="39" parent="9" name="id">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
       </column>
-      <column id="41" parent="9" name="teaname">
+      <column id="40" parent="9" name="teaname">
         <data-type>varchar(20)</data-type>
       </column>
-      <key id="42" parent="9" name="PRIMARY">
+      <key id="41" parent="9" name="PRIMARY">
         <columns>id</columns>
         <primary>1</primary>
       </key>
-      <column id="43" parent="10" name="id">
+      <column id="42" parent="10" name="id">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
       </column>
-      <column id="44" parent="10" name="title">
+      <column id="43" parent="10" name="title">
         <data-type>varchar(20)</data-type>
       </column>
-      <column id="45" parent="10" name="contentid">
+      <column id="44" parent="10" name="contentid">
         <data-type>int(11)</data-type>
       </column>
-      <key id="46" parent="10" name="PRIMARY">
+      <key id="45" parent="10" name="PRIMARY">
         <columns>id</columns>
         <primary>1</primary>
       </key>
-      <column id="47" parent="11" name="id">
+      <column id="46" parent="11" name="id">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
       </column>
-      <column id="48" parent="11" name="content">
+      <column id="47" parent="11" name="content">
         <data-type>text</data-type>
       </column>
-      <column id="49" parent="11" name="topicid">
+      <column id="48" parent="11" name="topicid">
         <data-type>int(11)</data-type>
       </column>
-      <key id="50" parent="11" name="PRIMARY">
+      <key id="49" parent="11" name="PRIMARY">
         <columns>id</columns>
         <primary>1</primary>
       </key>
-      <column id="51" parent="12" name="id">
+      <column id="50" parent="12" name="id">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
       </column>
-      <column id="52" parent="12" name="username">
+      <column id="51" parent="12" name="username">
         <data-type>varchar(20)</data-type>
       </column>
-      <column id="53" parent="12" name="password">
+      <column id="52" parent="12" name="password">
         <data-type>varchar(20)</data-type>
       </column>
-      <key id="54" parent="12" name="PRIMARY">
+      <key id="53" parent="12" name="PRIMARY">
         <columns>id</columns>
         <primary>1</primary>
       </key>
