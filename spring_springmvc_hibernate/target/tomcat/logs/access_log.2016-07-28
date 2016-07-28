@@ -1,0 +1,6 @@
+0:0:0:0:0:0:0:1 - - [28/Jul/2016:18:08:21 +0800] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 949 http-bio-80-exec-1 506
+0:0:0:0:0:0:0:1 - - [28/Jul/2016:18:08:28 +0800] "GET /book HTTP/1.1" 200 12393 http-bio-80-exec-2 3335
+0:0:0:0:0:0:0:1 - - [28/Jul/2016:18:08:28 +0800] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 122544 http-bio-80-exec-3 98
+0:0:0:0:0:0:0:1 - - [28/Jul/2016:18:08:34 +0800] "GET /book/new HTTP/1.1" 200 3408 http-bio-80-exec-4 416
+0:0:0:0:0:0:0:1 - - [28/Jul/2016:18:08:55 +0800] "POST /book/new HTTP/1.1" 302 - http-bio-80-exec-5 207
+0:0:0:0:0:0:0:1 - - [28/Jul/2016:18:08:55 +0800] "GET /book HTTP/1.1" 200 12869 http-bio-80-exec-6 163
