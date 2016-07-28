@@ -1,9 +1,12 @@
 F:\java21\spring_springmvc_hibernate\src\main\java\com\kaishengit\pojo\Book.java
 F:\java21\spring_springmvc_hibernate\src\main\java\com\kaishengit\controller\BookController.java
 F:\java21\spring_springmvc_hibernate\src\main\java\com\kaishengit\dao\BaseDao.java
+F:\java21\spring_springmvc_hibernate\src\main\java\com\kaishengit\util\Strings.java
 F:\java21\spring_springmvc_hibernate\src\main\java\com\kaishengit\dao\BookDao.java
 F:\java21\spring_springmvc_hibernate\src\main\java\com\kaishengit\dao\BookTypeDao.java
 F:\java21\spring_springmvc_hibernate\src\main\java\com\kaishengit\dao\PublisherDao.java
 F:\java21\spring_springmvc_hibernate\src\main\java\com\kaishengit\pojo\BookType.java
+F:\java21\spring_springmvc_hibernate\src\main\java\com\kaishengit\util\Page.java
 F:\java21\spring_springmvc_hibernate\src\main\java\com\kaishengit\pojo\Publisher.java
+F:\java21\spring_springmvc_hibernate\src\main\java\com\kaishengit\util\SearchParam.java
 F:\java21\spring_springmvc_hibernate\src\main\java\com\kaishengit\service\BookService.java

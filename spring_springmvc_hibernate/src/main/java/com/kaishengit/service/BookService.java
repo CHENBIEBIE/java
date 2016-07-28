@@ -6,6 +6,8 @@ import com.kaishengit.dao.PublisherDao;
 import com.kaishengit.pojo.Book;
 import com.kaishengit.pojo.BookType;
 import com.kaishengit.pojo.Publisher;
+import com.kaishengit.util.Page;
+import com.kaishengit.util.SearchParam;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.inject.Inject;
@@ -49,5 +51,9 @@ public class BookService {
 
     public List<Book> findAllBook() {
         return bookDao.findAll();
+    }
+
+    public Page<Book> findByPage(Integer pageNo, List<SearchParam> searchParamList) {
+        return bookDao.findByPageNo(pageNo,5,searchParamList);
     }
 }

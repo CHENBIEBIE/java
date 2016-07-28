@@ -1,9 +1,12 @@
-com\kaishengit\dao\PublisherDao.class
-com\kaishengit\dao\BookDao.class
-com\kaishengit\dao\BaseDao.class
+com\kaishengit\util\SearchParam.class
 com\kaishengit\pojo\Publisher.class
+com\kaishengit\util\Page.class
 com\kaishengit\pojo\BookType.class
-com\kaishengit\service\BookService.class
 com\kaishengit\controller\BookController.class
+com\kaishengit\service\BookService.class
 com\kaishengit\dao\BookTypeDao.class
+com\kaishengit\dao\BaseDao.class
+com\kaishengit\dao\BookDao.class
+com\kaishengit\dao\PublisherDao.class
+com\kaishengit\util\Strings.class
 com\kaishengit\pojo\Book.class
