@@ -14,27 +14,27 @@
         <div class="well well-sm">
             <form method="get" class="form-inline">
                 <div class="form-group">
-                    <input type="text" placeholder="书籍名称" name="q_s_like_bookname" value="${q_s_like_bookname}" class="form-control">
+                    <input type="text" placeholder="书籍名称 或 作者" name="q_s_like_bookname_or_bookauthor" value="${q_s_like_bookname_or_bookauthor}" class="form-control">
                 </div>
                 <div class="form-group">
                     <input type="text" placeholder="最低价格" name="q_f_ge_bookprice" value="${q_f_ge_bookprice}" class="form-control"> - <input type="text" placeholder="最高价格" name="q_f_le_bookprice" value="${q_f_le_bookprice}" class="form-control">
                 </div>
-                <%--<div class="form-group">
-                    <select name="type" class="form-control">
+                <div class="form-group">
+                    <select name="q_i_eq_bookType.id" class="form-control">
                         <option value="">请选择类型</option>
                         <c:forEach items="${types}" var="type">
-                            <option value="${type.id}" ${typeid == type.id ? 'selected' : '' }>${type.booktype}</option>
+                            <option value="${type.id}" ${requestScope['q_i_eq_bookType.id'] == type.id ? 'selected' : '' }>${type.booktype}</option>
                         </c:forEach>
                     </select>
                 </div>
                 <div class="form-group">
-                    <select name="pub" class="form-control">
+                    <select name="q_i_eq_publisher.id" class="form-control">
                         <option value="">请选择出版社</option>
                         <c:forEach items="${pubs}" var="pub">
-                            <option value="${pub.id}" ${pubid == pub.id ? 'selected' : ''} >${pub.pubname}</option>
+                            <option value="${pub.id}" ${requestScope['q_i_eq_publisher.id'] == pub.id ? 'selected' : ''} >${pub.pubname}</option>
                         </c:forEach>
                     </select>
-                </div>--%>
+                </div>
                 <button class="btn btn-default">搜索</button>
             </form>
         </div>
@@ -82,7 +82,7 @@
                 prev:'上一页',
                 next:'下一页',
                 last:'末页',
-                href:'?p={{number}}&q_s_like_bookname=${q_s_like_bookname}&q_f_ge_bookprice=${q_f_ge_bookprice}&q_f_le_bookprice=${q_f_le_bookprice}'
+                href:'?p={{number}}&q_s_like_bookname_or_bookauthor=${q_s_like_bookname_or_bookauthor}&q_f_ge_bookprice=${q_f_ge_bookprice}&q_f_le_bookprice=${q_f_le_bookprice}&q_i_eq_bookType.id=${requestScope['q_i_eq_bookType.id']}&q_i_eq_publisher.id=${requestScope['q_i_eq_publisher.id']}'
             });
         });
     </script>

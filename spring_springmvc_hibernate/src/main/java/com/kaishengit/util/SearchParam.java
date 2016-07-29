@@ -47,7 +47,7 @@ public class SearchParam {
             String queryString = enumeration.nextElement();
             Object value = request.getParameter(queryString);
             if (queryString.startsWith("q_")&& value != null && StringUtils.isNotEmpty(value.toString())) {
-                String[] array = queryString.split("_");
+                String[] array = queryString.split("_",4);
                 if (array.length != 4) {
                     throw new RuntimeException("地址栏查询字符串格式错误:"+queryString);
 
@@ -59,8 +59,10 @@ public class SearchParam {
                 SearchParam searchParam = new SearchParam();
                 searchParam.setProtertyName(propertyName);
                 value = converterType(value,valueType);
+
                 searchParam.setValue(value);
                 searchParam.setType(type);
+
                 searchParamList.add(searchParam);
 
                 request.setAttribute(queryString,value);

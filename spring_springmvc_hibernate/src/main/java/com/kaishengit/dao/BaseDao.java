@@ -6,9 +6,7 @@ import com.kaishengit.util.SearchParam;
 import org.hibernate.Criteria;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
-import org.hibernate.criterion.MatchMode;
-import org.hibernate.criterion.Projections;
-import org.hibernate.criterion.Restrictions;
+import org.hibernate.criterion.*;
 import org.hibernate.transform.ResultTransformer;
 
 import javax.inject.Inject;
@@ -98,6 +96,8 @@ public class BaseDao<T,PK extends Serializable> {
     }
 
     private Criteria buildCriteriaBySearchParam(List<SearchParam> searchParamList) {
+
+        //查询对象
         Criteria criteria = getSession().createCriteria(entityClass);
 
         for(SearchParam searchParam : searchParamList) {
@@ -105,22 +105,45 @@ public class BaseDao<T,PK extends Serializable> {
             Object value = searchParam.getValue();
             String type = searchParam.getType();
 
-            if("eq".equalsIgnoreCase(type)) {
-                criteria.add(Restrictions.eq(propertyName,value));
-            } else if("like".equalsIgnoreCase(type)) {
-                criteria.add(Restrictions.like(propertyName,value.toString(), MatchMode.ANYWHERE));
-            } else if("ge".equalsIgnoreCase(type)) {
-                criteria.add(Restrictions.ge(propertyName,value));
-            } else if("gt".equalsIgnoreCase(type)) {
-                criteria.add(Restrictions.gt(propertyName,value));
-            } else if("le".equalsIgnoreCase(type)) {
-                criteria.add(Restrictions.le(propertyName,value));
-            } else if("lt".equalsIgnoreCase(type)) {
-                criteria.add(Restrictions.lt(propertyName,value));
+            if(propertyName.contains("_or_")) {
+                String[] nameArray = propertyName.split("_or_"); //name author
+
+                //连接出来的条件都是or的关系
+                Disjunction disjunction = Restrictions.disjunction();
+                for(String name : nameArray) {
+                    Criterion c = bulidCondition(name,value,type);
+                    disjunction.add(c);
+                }
+
+                criteria.add(disjunction);
+            } else {
+                //查询对象的条件对象
+                Criterion criterion = bulidCondition(propertyName, value, type);
+                criteria.add(criterion);
             }
         }
 
         return criteria;
+
+    }
+
+
+
+    private Criterion bulidCondition(String propertyName,Object value, String type) {
+        if("eq".equalsIgnoreCase(type)) {
+            return Restrictions.eq(propertyName,value);
+        } else if("like".equalsIgnoreCase(type)) {
+            return Restrictions.like(propertyName,value.toString(), MatchMode.ANYWHERE);
+        } else if("ge".equalsIgnoreCase(type)) {
+            return Restrictions.ge(propertyName,value);
+        } else if("gt".equalsIgnoreCase(type)) {
+            return Restrictions.gt(propertyName,value);
+        } else if("le".equalsIgnoreCase(type)) {
+            return Restrictions.le(propertyName,value);
+        } else if("lt".equalsIgnoreCase(type)) {
+            return Restrictions.lt(propertyName,value);
+        }
+        return null;
     }
 
 }

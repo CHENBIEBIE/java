@@ -34,6 +34,12 @@ public class BookController {
         List<SearchParam> searchParamList = SearchParam.buiderSearchParam(request);
 
         Page<Book> page = bookService.findByPage(pageNo,searchParamList);
+
+        List<BookType> bookTypeList = bookService.findAllBookType();
+        List<Publisher> publisherList = bookService.findAllPublisher();
+
+        model.addAttribute("types",bookTypeList);
+        model.addAttribute("pubs",publisherList);
         model.addAttribute("page",page);
         return "book/list";
     }
