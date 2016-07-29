@@ -67,7 +67,7 @@ public class SearchParam {
 
                 request.setAttribute(queryString,value);
             }
-        }
+            }
 
         return searchParamList;
     }
