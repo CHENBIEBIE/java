@@ -1,5 +1,0 @@
-0:0:0:0:0:0:0:1 - - [28/Jul/2016:21:46:55 +0800] "GET /book?q_like_bookname=java&q_ge_bookprice=20&q_le_bookprice= HTTP/1.1" 500 7394 http-bio-80-exec-1 4832
-0:0:0:0:0:0:0:1 - - [28/Jul/2016:21:47:06 +0800] "GET / HTTP/1.1" 200 57 http-bio-80-exec-2 2404
-0:0:0:0:0:0:0:1 - - [28/Jul/2016:21:47:14 +0800] "GET /book HTTP/1.1" 200 4409 http-bio-80-exec-3 1491
-0:0:0:0:0:0:0:1 - - [28/Jul/2016:21:48:05 +0800] "GET /book?q_like_bookname=Java&q_ge_bookprice=&q_le_bookprice= HTTP/1.1" 200 4459 http-bio-80-exec-4 161
-0:0:0:0:0:0:0:1 - - [28/Jul/2016:21:48:12 +0800] "GET /book?q_like_bookname=&q_ge_bookprice=20&q_le_bookprice= HTTP/1.1" 500 7394 http-bio-80-exec-5 16

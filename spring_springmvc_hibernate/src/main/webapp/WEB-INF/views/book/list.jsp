@@ -14,10 +14,10 @@
         <div class="well well-sm">
             <form method="get" class="form-inline">
                 <div class="form-group">
-                    <input type="text" placeholder="书籍名称" name="q_like_bookname" value="${bookname}" class="form-control">
+                    <input type="text" placeholder="书籍名称" name="q_s_like_bookname" value="${q_s_like_bookname}" class="form-control">
                 </div>
                 <div class="form-group">
-                    <input type="text" placeholder="最低价格" name="q_ge_bookprice" class="form-control"> - <input type="text" placeholder="最高价格" name="q_le_bookprice" class="form-control">
+                    <input type="text" placeholder="最低价格" name="q_f_ge_bookprice" value="${q_f_ge_bookprice}" class="form-control"> - <input type="text" placeholder="最高价格" name="q_f_le_bookprice" value="${q_f_le_bookprice}" class="form-control">
                 </div>
                 <%--<div class="form-group">
                     <select name="type" class="form-control">
@@ -82,7 +82,7 @@
                 prev:'上一页',
                 next:'下一页',
                 last:'末页',
-                href:'?p={{number}}'
+                href:'?p={{number}}&q_s_like_bookname=${q_s_like_bookname}&q_f_ge_bookprice=${q_f_ge_bookprice}&q_f_le_bookprice=${q_f_le_bookprice}'
             });
         });
     </script>
