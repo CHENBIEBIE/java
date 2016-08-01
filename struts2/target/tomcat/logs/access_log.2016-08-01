@@ -1,3 +1,12 @@
-0:0:0:0:0:0:0:1 - - [01/Aug/2016:12:03:30 +0800] "GET /user/new.do HTTP/1.1" 200 275 http-bio-80-exec-1 1572
-0:0:0:0:0:0:0:1 - - [01/Aug/2016:12:03:34 +0800] "POST /user/save.do HTTP/1.1" 302 - http-bio-80-exec-3 35
-0:0:0:0:0:0:0:1 - - [01/Aug/2016:12:03:34 +0800] "GET /user/list.do HTTP/1.1" 200 178 http-bio-80-exec-4 634
+0:0:0:0:0:0:0:1 - - [01/Aug/2016:17:32:15 +0800] "GET /login HTTP/1.1" 404 961 http-bio-80-exec-1 3893
+0:0:0:0:0:0:0:1 - - [01/Aug/2016:17:33:50 +0800] "GET /index HTTP/1.1" 404 961 http-bio-80-exec-6 2
+0:0:0:0:0:0:0:1 - - [01/Aug/2016:17:34:25 +0800] "GET /book HTTP/1.1" 404 959 http-bio-80-exec-9 2
+0:0:0:0:0:0:0:1 - - [01/Aug/2016:17:34:27 +0800] "GET /book/list HTTP/1.1" 404 969 http-bio-80-exec-9 3
+0:0:0:0:0:0:0:1 - - [01/Aug/2016:17:34:57 +0800] "GET /book/list.do HTTP/1.1" 302 - http-bio-80-exec-9 179
+0:0:0:0:0:0:0:1 - - [01/Aug/2016:17:34:59 +0800] "GET /index.do?code=10002 HTTP/1.1" 200 385 http-bio-80-exec-9 1912
+0:0:0:0:0:0:0:1 - - [01/Aug/2016:17:35:13 +0800] "POST /login.do HTTP/1.1" 302 - http-bio-80-exec-9 69
+0:0:0:0:0:0:0:1 - - [01/Aug/2016:17:35:14 +0800] "GET /user/list.do HTTP/1.1" 200 153 http-bio-80-exec-9 201
+0:0:0:0:0:0:0:1 - - [01/Aug/2016:17:35:27 +0800] "GET /index HTTP/1.1" 404 961 http-bio-80-exec-9 4
+0:0:0:0:0:0:0:1 - - [01/Aug/2016:17:35:34 +0800] "GET /index.do HTTP/1.1" 200 329 http-bio-80-exec-9 7
+0:0:0:0:0:0:0:1 - - [01/Aug/2016:17:35:41 +0800] "POST /login.do HTTP/1.1" 302 - http-bio-80-exec-9 9
+0:0:0:0:0:0:0:1 - - [01/Aug/2016:17:35:41 +0800] "GET /user/list.do HTTP/1.1" 200 153 http-bio-80-exec-9 6

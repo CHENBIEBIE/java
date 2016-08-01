@@ -1,0 +1,10 @@
+0:0:0:0:0:0:0:1 - - [01/Aug/2016:12:32:54 +0800] "GET / HTTP/1.1" 200 917 http-bio-80-exec-1 1532
+0:0:0:0:0:0:0:1 - - [01/Aug/2016:12:32:54 +0800] "GET /css/style.css HTTP/1.1" 404 949 http-bio-80-exec-3 25
+0:0:0:0:0:0:0:1 - - [01/Aug/2016:12:32:54 +0800] "GET /favicon.ico HTTP/1.1" 404 949 http-bio-80-exec-4 3
+0:0:0:0:0:0:0:1 - - [01/Aug/2016:12:32:58 +0800] "GET /user/home? HTTP/1.1" 200 2307 http-bio-80-exec-5 217
+0:0:0:0:0:0:0:1 - - [01/Aug/2016:12:32:58 +0800] "GET /static/css/style.css HTTP/1.1" 304 - http-bio-80-exec-6 39
+0:0:0:0:0:0:0:1 - - [01/Aug/2016:12:33:00 +0800] "GET /patient/home HTTP/1.1" 200 4591 http-bio-80-exec-7 117
+0:0:0:0:0:0:0:1 - - [01/Aug/2016:12:33:02 +0800] "GET /patient/new HTTP/1.1" 200 5121 http-bio-80-exec-8 136
+0:0:0:0:0:0:0:1 - - [01/Aug/2016:12:33:02 +0800] "GET /static/js/simditor/styles/simditor.css HTTP/1.1" 304 - http-bio-80-exec-9 37
+0:0:0:0:0:0:0:1 - - [01/Aug/2016:12:33:02 +0800] "GET /static/js/simditor/scripts/js/simditor-all.min.js HTTP/1.1" 304 - http-bio-80-exec-2 49
+0:0:0:0:0:0:0:1 - - [01/Aug/2016:12:33:05 +0800] "GET /patient/new? HTTP/1.1" 200 5121 http-bio-80-exec-2 2
