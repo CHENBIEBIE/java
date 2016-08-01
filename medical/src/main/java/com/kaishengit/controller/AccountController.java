@@ -5,14 +5,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
-@RequestMapping("/user")
-public class HomeController {
+@RequestMapping("account")
+public class AccountController {
 
-    @RequestMapping(value = "home",method = RequestMethod.GET)
+    @RequestMapping(value = "list",method = RequestMethod.GET)
     public String list() {
 
-        return "user/home";
+        return "account/list";
 
     }
-
 }

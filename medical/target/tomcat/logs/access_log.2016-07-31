@@ -1,0 +1,17 @@
+0:0:0:0:0:0:0:1 - - [31/Jul/2016:15:34:58 +0800] "GET /patient/home.html HTTP/1.1" 200 4578 http-bio-80-exec-1 1455
+0:0:0:0:0:0:0:1 - - [31/Jul/2016:15:34:58 +0800] "GET /static/css/style.css HTTP/1.1" 304 - http-bio-80-exec-5 17
+0:0:0:0:0:0:0:1 - - [31/Jul/2016:15:35:01 +0800] "GET /patient/home.html HTTP/1.1" 200 4578 http-bio-80-exec-6 7
+0:0:0:0:0:0:0:1 - - [31/Jul/2016:15:35:05 +0800] "GET /patient/home.html HTTP/1.1" 200 4578 http-bio-80-exec-7 5
+0:0:0:0:0:0:0:1 - - [31/Jul/2016:15:35:14 +0800] "GET /patient/home.html HTTP/1.1" 200 4578 http-bio-80-exec-8 7
+0:0:0:0:0:0:0:1 - - [31/Jul/2016:15:35:16 +0800] "GET /patient/home HTTP/1.1" 200 4578 http-bio-80-exec-9 6
+0:0:0:0:0:0:0:1 - - [31/Jul/2016:15:36:09 +0800] "GET /patient/home HTTP/1.1" 200 4591 http-bio-80-exec-10 131
+0:0:0:0:0:0:0:1 - - [31/Jul/2016:15:36:15 +0800] "GET /account/list HTTP/1.1" 200 3882 http-bio-80-exec-10 139
+0:0:0:0:0:0:0:1 - - [31/Jul/2016:15:36:19 +0800] "GET /account/list HTTP/1.1" 200 3882 http-bio-80-exec-10 4
+0:0:0:0:0:0:0:1 - - [31/Jul/2016:15:36:22 +0800] "GET /account/list HTTP/1.1" 200 3882 http-bio-80-exec-10 3
+0:0:0:0:0:0:0:1 - - [31/Jul/2016:15:36:23 +0800] "GET /account/list HTTP/1.1" 200 3882 http-bio-80-exec-10 3
+0:0:0:0:0:0:0:1 - - [31/Jul/2016:15:36:26 +0800] "GET /account/list HTTP/1.1" 200 3882 http-bio-80-exec-10 4
+0:0:0:0:0:0:0:1 - - [31/Jul/2016:15:36:29 +0800] "GET /account/new-account.html HTTP/1.1" 404 949 http-bio-80-exec-10 6
+0:0:0:0:0:0:0:1 - - [31/Jul/2016:15:41:50 +0800] "GET / HTTP/1.1" 200 917 http-bio-80-exec-1 278
+0:0:0:0:0:0:0:1 - - [31/Jul/2016:15:41:50 +0800] "GET /css/style.css HTTP/1.1" 404 949 http-bio-80-exec-1 4
+0:0:0:0:0:0:0:1 - - [31/Jul/2016:15:41:50 +0800] "GET /favicon.ico HTTP/1.1" 404 949 http-bio-80-exec-1 2
+0:0:0:0:0:0:0:1 - - [31/Jul/2016:15:41:52 +0800] "GET /user/home? HTTP/1.1" 200 2307 http-bio-80-exec-1 98
